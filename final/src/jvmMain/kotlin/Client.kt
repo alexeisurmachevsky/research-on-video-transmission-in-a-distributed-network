@@ -16,7 +16,7 @@ class Client(host:String = "localhost", port:Int) {
     private fun conn() {
 
         // Отправляем запрос на получение адреса и порта
-        val request = "z".toByteArray()
+        val request = "blablabla".toByteArray()
         val requestPacket = DatagramPacket(request, request.size, serverAddress, serverPort)
         clientSocket.send(requestPacket)
 
